@@ -1,0 +1,39 @@
+{
+  "name": "vite-plugin-zip-dist-js",
+  "version": "0.0.2",
+  "author": "Ben",
+  "license": "MIT",
+  "main": "./dist/dist.umd.js",
+  "module": "./dist/dist.es.js",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "description": "用于在打包后将打包文件压缩为zip文件",
+  "keywords": [
+    "zip",
+    "vite-plugin",
+    "vite"
+  ],
+  "files": [
+    "dist"
+  ],
+  "bin": {},
+  "scripts": {
+    "build": "vite build"
+  },
+  "dependencies": {
+    "dayjs": "^1.10.7",
+    "jszip": "^3.7.1"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.11",
+    "vite": "^2.9.12"
+  },
+  "exports": {
+    ".": {
+      "import": "./dist/dist.es.js",
+      "require": "./dist/dist.umd.js"
+    }
+  }
+}
