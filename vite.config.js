@@ -8,8 +8,6 @@
 import { defineConfig } from "vite";
 import * as path from "path";
 
-const { name } = require("./package.json");
-
 // https://vitejs.dev/config/
 export default defineConfig({
   build: {
@@ -24,8 +22,8 @@ export default defineConfig({
       },
     },
     lib: {
-      entry: path.resolve(__dirname, "lib/index.js"),
-      name,
+      entry: "lib/index.js",
+      name: 'dist',
       fileName: (format) => `dist.${format}.js`,
     },
   },
