@@ -1,6 +1,6 @@
 {
-  "name": "vite-plugin-zip-dist-js",
-  "version": "0.0.3",
+  "name": "vite-plugin-zip-dist",
+  "version": "1.0.0",
   "author": "Ben",
   "license": "MIT",
   "main": "./dist/dist.umd.js",
