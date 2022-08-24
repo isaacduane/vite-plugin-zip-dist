@@ -9,7 +9,7 @@
 # 安装
 
 ```text
-npm install vite-plugin-zip-dist-js -D
+npm install vite-plugin-zip-dist -D
 
 ```
 
@@ -26,7 +26,7 @@ npm install vite-plugin-zip-dist-js -D
 ```jsScript
 // vite.config.js
 
-import VitePluginDistZipJs from "vite-plugin-zip-dist-js";
+import VitePluginDistZipJs from "vite-plugin-zip-dist";
 import {name} from "./package.json";
 
 export default defineConfig({
